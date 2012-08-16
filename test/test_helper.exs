@@ -1,0 +1,2 @@
+App.start
+ExUnit.start
