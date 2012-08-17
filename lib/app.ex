@@ -8,8 +8,8 @@ defmodule App do
 end
 defmodule AppSrv do
   def init(arg) do
-    :error_logger.info_report('started!') # ok!
-#    IO.puts("started!")  # hangup!
+#    :error_logger.info_report('started!') # ok!
+    IO.puts("started!")  # hangup!
     {:ok, []}
   end
   def handle_call({:ping}, _from, state) do
