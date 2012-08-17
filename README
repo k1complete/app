@@ -24,32 +24,5 @@ iex(2)> :gen_server.call(:app, {:ping})
 iex(3)> halt
 $ 
 
-Running (hang up in using IO.puts)
-edit for app.ex
-    :error_logger.info_report('started!') # ok!
-#    IO.puts("started!")  # hangup!
-to
-#    :error_logger.info_report('started!') # ok!
-    IO.puts("started!")  # hangup!
-.
-and build 
-$ mix 
-/Users/k-1/work/erl/elixir_doc/proj/app/lib/app.ex:10: variable arg is unused
-Compiled lib/app.ex
-Generated app.app
-started!
-.
-
-1 tests, 0 failures.
-$ mix iex
-Interactive Elixir (0.7.0.dev) - press Ctrl+C to exit
-Erlang R15B01 (erts-5.9.1) [source] [smp:2:2] [async-threads:0] [hipe] [kernel-poll:false]
-
-iex(1)> :application.start(:app)
-
-BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
-       (v)ersion (k)ill (D)b-tables (d)istribution
-a
-$
 
 ** TODO: Add description **
