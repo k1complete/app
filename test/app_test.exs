@@ -7,6 +7,6 @@ defmodule AppTest do
     assert true
   end
   test "communication" do
-    assert {:pong} = :gen_server.call(:app, {:ping})
+    assert {:pong} = :gen_server.call(:app_srv, {:ping})
   end
 end

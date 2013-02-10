@@ -1,2 +1,1 @@
-App.start
 ExUnit.start
