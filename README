@@ -3,8 +3,11 @@ Simple Application with Elixir
 
 
 Building:
-$ mix compile
+
+bash-3.2$ mix
 Compiled lib/app.ex
+Compiled lib/app/server.ex
+Compiled lib/app/supervisor.ex
 Generated app.app
 
 Running: 
