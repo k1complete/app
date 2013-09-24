@@ -14,11 +14,17 @@ Running:
 
 bash-3.2$ iex -S mix
 Warning: could not run smart terminal, falling back to dumb one
-Interactive Elixir (0.8.0.dev) - press Ctrl+C to exit (type h() ENTER for help)
+Interactive Elixir (0.10.3-dev) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> App.start
 :ok
 iex(2)> :gen_server.call(:app_srv, {:ping})
 {:pong}
+iex(3)> :gen_server.call(:app_srv, {:bad_message})
+** (exit) {:timeout, {:gen_server, :call, [:app_srv, {:bad_message}]}}
+    gen_server.erl:180: :gen_server.call/2
+    erl_eval.erl:569: :erl_eval.do_apply/6
+    src/elixir.erl:138: :elixir.eval_forms/3
 
+iex(3)> 
 
 ** TODO: Add description **
