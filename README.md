@@ -1,3 +1,0 @@
-# App
-
-** TODO: Add description **
